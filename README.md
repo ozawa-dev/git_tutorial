@@ -154,3 +154,36 @@ clone
 ```
 git clone URL
 ```
+
+## .gitignore（除外ルール）
+基本
+```
+test.txt ：ファイル名
+*.txt ： ワイルドカード
+node_modules/ ： ディレクトリ
+!important-file.txt ： 特定のファイルやフォルダを除外しない
+```
+サンプル（nodejs pj）
+```
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Dependency directories
+node_modules/
+
+# Build directories
+dist/
+build/
+```
+すでに追跡済みのファイルは影響範囲外のため、キャッシュクリアする必要がある
+```
+git rm -r --cached
+git add .
+git commit -m "update .gitignore"
+```
+
+
