@@ -21,7 +21,7 @@ git config user.email
 git config core.editor
 git config --list → 全て確認できる（cat ~/.gitconfigと同様）
 ```
-※globalでないなら、./.git/configに保存される
+※globalでないなら./.git/configに保存される
 
 ## ローカルリポジトリ作成
 ```
